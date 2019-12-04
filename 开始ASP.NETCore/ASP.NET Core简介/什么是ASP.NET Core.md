@@ -1,0 +1,16 @@
+Windows版本。它包含构建Web应用程序时ASP.NET 使用的所有核心代码。
+这种依赖性带来了优点和缺点。一方面，ASP.NET Framework是一个经过实践检验的可靠平台，是在Windows上构建现代应用程序的绝佳选择。他提供了广泛的功能，这些功能已经用于生成了很多年，并且几乎所有Windows Web开发人员都知道它。
+另一方面，这种依赖是有限的，对基础System.Web.dll的更改影响甚远，因为推出速度很慢。这限制了ASP.NET自由发展的程度，并导致发布周期仅每隔几年发布一次。Windows web host
+Internet信息服务（IIS）也有明确的结合，这使其无法在非Windows平台上使用。
+近年来，许多Web开发人员已经开始研究可以在Windows以及Linux和MacOs上运行的跨平台Web框架。微软认为现在是时候创建一个不再与Windows版本相关的框架了，因此ASP.NET Core诞生了。
+## 1.1.3什么是ASP.NET Core
+
+创建一个具有四个主要目标的Web框架的使命推动了ASP.NET Core的发展：
+- 可以运行和开发跨平台
+- 具有模块化架构，易于维护
+- 将完全作为开发软件进行开发
+- 适用于Web开发的当前趋势，例如客户端应用程序并部署到云环境
+
+为了这些目标,Microsoft需要一个平台，该平台可以提供用于创建基本对象如列表和字典并执行这些简单文件操作基础库。到目前为止，ASP.NET 开发始终专注于并且仅依赖于Windows的.NET Framework。对于ASP.NET Core Microsoft创建了一个轻量级平台，可在Windows,Linux和macOS上运行，成为.NET Core如图1.2所示。
+.NET Core与.NET Framework共享许多相同的API，但它较小，目前仅实现.NET Framework提供的功能的子集，目的是提供更简单的实现和编程模型。它是一个全新的平台，而不是.NET Framework的分支，尽管他的许多API使用类似的代码。
+仅使用.NET Core，就可以构建跨平台运行的控制台应用程序。微软创建了ASP.NET Core，作为控制台应用程序之上的另一层，因此，转换为Web应用程序需要添加和编写库,如1.3所示。
